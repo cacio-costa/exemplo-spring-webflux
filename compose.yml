@@ -1,0 +1,18 @@
+services:
+  
+  mongo:
+    image: mongo
+    container_name: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: 123
+      MONGO_INITDB_DATABASE: faturas
+    ports:
+      - 27017:27017
+
+#  smtp:
+#    image: mailhog/mailhog
+#    ports:
+#      - "1025:1025"
+#      - "8025:8025"
+
